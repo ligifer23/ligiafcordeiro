@@ -1,1 +1,30 @@
 Exercício 4
+
+Deadlock é, em sua concepção básica, um bloqueio que impede a sua resolução devido a espera de ação de outrém, criando-se um ciclo. 
+Ocorrem tanto em hardward quanto software.
+Podemos associar o deadlock a um engarrafamento de um cruzamento: o carro 1 acessa a via 2 e o carro 2 acessa a via 1 para chegar ao 
+ponto P. 
+Carro 1 e carro 2 avançam de forma assíncrona, até que a ação de ambos interfere no objetivo final de cada um, impedindo a finalização 
+do processo.
+
+Por assimilação falando da linguagem Java, quando dois ou mais processo do SO ou threads não conseguem prosseguir com suas execuções devido a tentativa de acesso concomitante à um mesmo serviço e ficam bloqueados.
+Podem ocorrer deadlock em acessos a banco de dados, serviços e filas para impressão, por exemplo:
+
+Como prever:
+Espera em circulo: ordenação mandatória de todos os tipos de recursos, fazendo uso do processo de numeração incrementada
+Método synchronized é usado à thread para bloqueio do recurso.
+Keep and wait: processo mantém recursos alocados antes do início da execução, usado para baixa utilização dos recursos (requisição-uso-liberação)
+Exclusão mútua: usado geralmente para recurso não compartilháveis 
+Sem preferência: 
+
+
+Como detectar:
+Existem algoritmos para detecção de dealocks
+
+
+Como recuper/eliminar:
+Modelo mais simples e mais útil exige que cada processo declare o número máximo de recursos de cada tipo que ele pode precisar
+O algoritmo para evitar impasse examina dinamicamente o estado de alocação de recurso para garantir que nunca poderá haver uma condição de espera circular.
+O estado de alocação de recurso é definido pelo número de recursos disponíveis e alocados, e as demandas máximas dos processos.
+
+

@@ -1,0 +1,27 @@
+Casos de teste
+Simulacao e alteracao direta no codigo (hardcode)
+StringParm 
+
+Cenários de testes positivos
+Sequencia testada: aAbBABacafe
+Resultado: Caracter vogal encontrado = e
+
+Sequencia testada: aAbBABacafe
+Resultado: Caracter vogal encontrado = e
+
+Sequencia testada: eAbBOBecafu
+Resultado: Caracter vogal encontrado = e
+
+Sequencia testada: eAbBOBecefu
+Resultado: Caracter vogal encontrado = u
+
+Cenários de testes negativos:
+Sequencia testada: eAbBEBecefe
+Resultado: Caracter vogal não encontrado na string informada
+
+Sequencia testada: eAbBEBucufu 
+Resultado: Caracter vogal não encontrado na string informada
+
+Sequencia testada: eAbBOBecegarcavegau
+Resultado: Caracter vogal não encontrado na string informada
+
